@@ -186,11 +186,13 @@ textarea {
 .home-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  /* background: #000000; */
   background-position: center;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  position: relative; }
+  position: relative;
+ }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
       height: unset;
@@ -308,7 +310,10 @@ textarea {
     .projects__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem; 
+      
+    }
+    
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-title {
           font-size: 2.4rem; } }
@@ -321,6 +326,8 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
+
+
 
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
@@ -702,3 +709,42 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
+.text-lt, .main-footer__short-desc, .main-footer__heading-sm{
+  background: linear-gradient(135deg ,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: gradient 8s ease-in-out infinite;
+}
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+/* .home-hero{
+  background: linear-gradient(135deg ,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: gradienth 8s ease-in-out infinite;
+}
+@keyframes gradienth{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+} */
